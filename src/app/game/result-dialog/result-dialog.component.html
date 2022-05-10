@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{messageTitle | uppercase}}</h2>
+<div mat-dialog-content>
+    <div class="score">
+        <div>Player</div>
+        <div>{{data.player}}</div>
+    </div>
+
+    <div class="score">
+        <div>Computer</div>
+        <div>{{data.computer}}</div>
+    </div>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="false">CANCEL</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true">RETRY</button>
+</div>

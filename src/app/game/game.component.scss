@@ -1,0 +1,37 @@
+.score-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+
+  .score-count {
+    text-align: center;
+  }
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .cell {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+
+    &.notTouched {
+      background-color: blue;
+    }
+
+    &.active {
+      background-color: yellow;
+    }
+
+    &.touchedByUser {
+      background-color: green;
+    }
+
+    &.touchedByComputer {
+      background-color: red;
+    }
+  }
+}

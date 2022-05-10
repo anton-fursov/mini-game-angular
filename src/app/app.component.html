@@ -1,0 +1,4 @@
+<mat-card>
+    <app-game *ngIf="isStarted" [timeOutValue]="timeOutValue" (restartGameEvent)="restart()"></app-game>
+    <app-start *ngIf="!isStarted" (startEvent)="start($event)"></app-start>
+</mat-card>

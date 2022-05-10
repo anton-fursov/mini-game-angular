@@ -1,0 +1,17 @@
+<div class="score-wrapper">
+    <div class="score">
+        <div>Player</div>
+        <div class="score-count">{{score.player}}</div>
+    </div>
+
+    <div class="score">
+        <div>Computer</div>
+        <div class="score-count">{{score.computer}}</div>
+    </div>
+</div>
+
+<div class="field-wrapper">
+    <div class="cell" [ngClass]="cell" *ngFor="let cell of cells; index as i" (click)="onCellClick(i)"></div>
+</div>
+
+
